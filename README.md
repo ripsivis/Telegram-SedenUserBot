@@ -4,7 +4,7 @@ Cemre UserBot
 ![GitHub repo size](https://img.shields.io/github/repo-size/ripsivis/Telegram-CemreUserBot?color=blue&style=flat)
 ![GitHub](https://img.shields.io/github/license/ripsivis/Telegram-CemreUserBot?color=blue&style=flat)
 
-Shameless SedenUserBot rebranding with additional features.
+Shameless Seden UserBot rebranding with additional features.
 Telegram Python Bot running on Python3 with a Postgresql Sqlalchemy database. It is an modular and simple to use bot.
 
 ```c
