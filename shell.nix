@@ -32,7 +32,7 @@ stdenv.mkDerivation {
       mv sample_config.env config.env
       echo "Press enter to edit config.env file..." && read >> /dev/null
       nano config.env
-      echo "Type "nix-shell" to start SedenUserBot!"
+      echo "Type "nix-shell" to start CemreUserBot!"
     fi
     '';
 }
