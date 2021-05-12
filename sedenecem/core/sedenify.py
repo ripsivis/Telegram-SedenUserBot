@@ -38,13 +38,16 @@ def sedenify(**args):
     if pattern and '.' in pattern[:2]:
         args['pattern'] = pattern = pattern.replace('.', _parsed_prefix, 1)
 
+    if pattern and pattern[-1:] != '$':
+        args['pattern'] = pattern = f'{pattern}(?: |$)'
+
     def msg_decorator(func):
         def wrap(client, message):
             if message.empty or not message.from_user:
                 return
 
             try:
-                if not TEMP_SETTINGS.get('ME', None):
+                if 'ME' not in TEMP_SETTINGS:
                     me = app.get_me()
                     TEMP_SETTINGS['ME'] = me
 
